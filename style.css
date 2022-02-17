@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	font-family: consolas;
+}
+
+img {
+	border-radius: 50%;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+header {
+	pointer-events: none;
+	user-select: none;
+	text-align: center;
+}
+
+section {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.header-first-line-flex {
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.website-name {
+	font-family: 'Courier New', Courier, monospace;
+	color: #0872A4;
+	font-size: 29px;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+.website-logo {
+	color: #E18804;
+	font-size: 20px;
+}

@@ -1,0 +1,223 @@
+<html>
+<head>
+	<title>
+		Questions Answer
+	</title>
+	<style>
+		.header {
+			opacity: 0.5;
+			font-family: monospace;
+			font-size: 30px;
+			text-align: center;
+			overflow: hidden;
+		}
+
+		h1 {
+			text-align: center;
+			font-family: 'Courier New', Courier, monospace;
+			border-bottom: 1px solid gray;
+			margin-top: -.1%;
+		}
+
+		.heat_and_thermodynamics {
+			border: 1px solid gray;
+			margin: 1%;
+		}
+
+		#author-right {
+			font-family: monospace;
+			opacity: 0.6;
+			font-size: 8px;
+			text-align: right;
+			overflow: hidden;
+		}
+
+		#box {
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-bottom: 2%;
+			padding: 2%;
+			border: 1px solid gray;
+			overflow: hidden;
+		}
+
+		h3 {
+			padding: 2px;
+			margin-top: -.1%;
+			border-bottom: 1px solid gray;
+			font-family: Courier;
+		}
+
+		#text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8,#text9,#text10,#text11,#text12,#text13 {
+			opacity: 0.7;
+		}
+
+		#heat_and_thermodynamics_contents1,#more1, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11, #more12, #more13, #more14, #more15, #more16, #more17, #more18, #more19, #more20 {
+			display: none;
+		}
+
+		#get_content1_btn1,#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9,#btn10,#btn11,#btn12,#btn13,#btn14,#btn15,#btn16,#btn17,#btn18,#btn19,#btn20 {
+			font-size: 20px;
+		}
+
+		p {
+			font-size: 15px;
+			padding-left: 3%;
+			margin-top: -5px;
+			font-family: monospace;
+		}
+
+		button {
+			background: none;
+			color: #338af5;
+			margin-top: -6px;
+			margin-left: 3%;
+			outline: none;
+			border: none;
+			margin-bottom: 2px;
+		}
+
+		button:hover{
+			color: #2663ad;
+			cursor: pointer;
+			opacity: 0.7;
+		}
+	</style>
+	<script type="text/javascript">
+		function Function1() {
+			var content = document.getElementById('get_content1');
+			var more = document.getElementById('heat_and_thermodynamics_contents1');
+			var btn = document.getElementById('get_content1_btn1');
+
+			if (content.style.display === "none") {
+				content.style.display = "inline";
+				more.style.display = "none";
+				btn.innerHTML = "Get contents";
+			} else {
+				content.style.display = "none";
+				more.style.display = "inline";
+				btn.innerHTML = "Hide contents";
+			}
+		}
+
+		function myFunction1() {
+			var text = document.getElementById('text1');
+			var more = document.getElementById('more1');
+			var btn = document.getElementById('btn1');
+
+			if (text.style.display === "none") {
+				text.style.display = "inline";
+				more.style.display = "none";
+				btn.innerHTML = "Show Answer";
+			} else {
+				text.style.display = "none";
+				more.style.display = "inline";
+				btn.innerHTML = "Hide Answer";
+			}
+		}
+
+		function myFunction2() {
+			var text = document.getElementById('text2');
+			var more = document.getElementById('more2');
+			var btn = document.getElementById('btn2');
+
+			if (text.style.display === "none") {
+				text.style.display = "inline";
+				more.style.display = "none";
+				btn.innerHTML = "Show Answer";
+			} else {
+				text.style.display = "none";
+				more.style.display = "inline";
+				btn.innerHTML = "Hide Answer";
+			}
+		}
+
+		function myFunction3() {
+			var text = document.getElementById('text3');
+			var more = document.getElementById('more3');
+			var btn = document.getElementById('btn3');
+
+			if (text.style.display === "none") {
+				text.style.display = "inline";
+				more.style.display = "none";
+				btn.innerHTML = "Show Answer";
+			} else {
+				text.style.display = "none";
+				more.style.display = "inline";
+				btn.innerHTML = "Hide Answer";
+			}
+		}
+
+		function myFunction4() {
+			var text = document.getElementById('text4');
+			var more = document.getElementById('more4');
+			var btn = document.getElementById('btn4');
+
+			if (text.style.display === "none") {
+				text.style.display = "inline";
+				more.style.display = "none";
+				btn.innerHTML = "Show Answer";
+			} else {
+				text.style.display = "none";
+				more.style.display = "inline";
+				btn.innerHTML = "Hide Answer";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<h1>Question Answer</h1>
+	</div>
+
+	<div class="heat_and_thermodynamics">
+		<h1>Heat and Thermodynamics</h1>
+		<p>
+			<span id="get_content1"></span>
+		</p>
+		<div id="heat_and_thermodynamics_contents1">
+			<div id="box">
+				<h3>Define dew point.</h3>
+				<p>
+					<span id="text1"><b>Click the button to see answer.</b></span><span id="more1">
+						<b>Ans:</b> It is defined as the temperature at which the water vapour present in certain volume of air become just sufficient to saturate it. At this temperature, the vapour pressure is equal to the saturated vapour pressure.
+					</span>
+				</p>
+				<button id="btn1" onclick="myFunction1()">Show Answer</button>
+			</div>
+			<br>
+			<div id="box">
+				<h3>Do saturated vapours obey gas laws?</h3>
+				<p>
+					<span id="text2"><b>Click the button to see answer.</b></span>
+					<span id="more2"><b>Ans:</b> The gas laws refer to fixed masses of gases, changing the state of a saturated vapour involves condensation or evaporation and therefore changes its mass. It follows that saturated vapours do not obey the gas laws.
+					</span>
+				</p>
+				<button id="btn2" onclick="myFunction2()">Show Answer</button>
+			</div>
+			<br>
+			<div id="box">
+				<h3>Clothes dry faster when a wind is blowing, Why?</h3>
+				<p>
+					<span id="text3"><b>Click the button to see answer.</b></span>
+					<span id="more3"><b>Ans:</b> If the wind blows, clothes dry faster because it increases the rate of evaporation by driving molecules of wet clothes away from it.
+					</span>
+				</p>
+				<button id="btn3" onclick="myFunction3()">Show Answer</button>
+			</div>
+			<br>
+			<div id="box">
+				<h3>What do you mean by the statement that the relative humidity is 100 percent?</h3>
+				<p>
+					<span id="text4"><b>Click the button to see answer.</b></span>
+					<span id="more4">
+						<b>Ans:</b> As the amount of water vapout present in a given volume of air is just sufficient to saturate the air, the partial pressure of water vapour in the air will be equal to the saturated vapour pressure of water at that temperature. In such a situation, the realative humidity of air is said to be 100 percent.
+					</span>
+				</p>
+				<button id="btn4" onclick="myFunction4()">Show Answer</button>
+			</div>
+		</div>
+		<button id="get_content1_btn1" onclick="Function1()">Get Contents</button>
+	</div>
+</body>
+</html>
